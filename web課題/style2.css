@@ -1,0 +1,80 @@
+/* モーダルの背景 */
+.modal {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+/* モーダルの白い箱 */
+.modal-content {
+    background: #fff;
+    width: 90%;
+    max-width: 800px;
+    margin: 10% auto;
+    padding: 3rem;
+    position: relative;
+    border-radius: 15px;
+    animation: modalOpen 0.5s ease-out; /* 開く時のアニメーション */
+}
+
+@keyframes modalOpen {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.modal-flex {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.modal-img {
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+
+.click-info {
+    font-size: 0.8rem;
+    color: var(--accent);
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .modal-flex { flex-direction: column; }
+    .modal-img { width: 100%; height: 200px; }
+}
+
+.teacher-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.teacher-card {
+    cursor: pointer; /* マウスを乗せたら指マークにする */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.teacher-card:hover {
+    transform: translateY(-10px) scale(1.02); /* 少し浮き上がって大きく */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}

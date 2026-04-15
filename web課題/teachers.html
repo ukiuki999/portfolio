@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>先生紹介 | 情報学部 | 大同大学</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&family=Shippori+Mincho&display=swap" rel="stylesheet">
+    <style>
+        .teacher-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+        .teacher-card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .teacher-icon {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-size: cover;
+            background-position: center;
+            margin: 0 auto 1.5rem;
+            background-color: #eee;
+        }
+        .prof {
+            font-size: 0.8rem;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+        .teacher-name {
+            font-family: var(--font-mincho);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .specialty {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #06629e;
+            margin-bottom: 1rem;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 3rem;
+            text-decoration: none;
+            color: var(--text-main);
+            border: 1px solid var(--text-main);
+            padding: 0.8rem 2rem;
+            transition: 0.3s;
+        }
+        .back-btn:hover {
+            background: var(--text-main);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <span class="logo-orange">大同</span><span class="logo-blue">大学</span>
+            </a>
+        </nav>
+    </header>
+
+    <main style="padding-top: 120px;">
+        <section class="container">
+            <h2 class="section-title">Faculty Members<br><span style="font-size: 1rem; color: var(--accent);">情報学部 先生紹介</span></h2>
+            
+           <div class="teacher-grid">
+    <div class="teacher-card" onclick="openModal('modal1')">
+        <div class="teacher-icon" style="background-image: url('image/teacher1.jpg');"></div>
+        <p class="prof">教授</p>
+        <h3 class="teacher-name">上岡 和弘 </h3>
+        <p class="specialty">研究テーマ:クリエイティブで、地域社会の課題と向き合う</p>
+        <p class="click-info"></p>
+    </div>
+
+    <div class="teacher-card" onclick="openModal('modal2')">
+        <div class="teacher-icon" style="background-image: url('image/teacher2.jpg');"></div>
+        <p class="prof">教授</p>
+        <h3 class="teacher-name">岡田 心</h3>
+        <p class="specialty">研究テーマ：地域産業とデザイン</p>
+        <p class="click-info"></p>
+    </div>
+
+    <div class="teacher-card" onclick="openModal('modal3')">
+        <div class="teacher-icon" style="background-image: url('image/teacher3.jpg');"></div>
+        <p class="prof">教授</p>
+        <h3 class="teacher-name">小島 一宏</h3>
+        <p class="specialty">研究テーマ:「映画監督に迫る」、「ラジオ復権を探る」</p>
+    </div>
+
+    <div class="teacher-card" onclick="openModal('modal4')">
+        <div class="teacher-icon" style="background-image: url('image/teacher4.jpg');"></div>
+        <p class="prof">教授</p>
+        <h3 class="teacher-name">佐々木 勝史 </h3>
+        <p class="specialty">研究テーマ：カーデザイン、モビリティ、トランスポーテーション</p>
+    </div>
+
+    <div class="teacher-card" onclick="openModal('modal5')">
+        <div class="teacher-icon" style="background-image: url('image/teacher5.jpg');"></div>
+        <p class="prof">教授</p>
+        <h3 class="teacher-name">冨永 慎一</h3>
+        <p class="specialty">研究テーマ：映像やWEBでの表現について</p>
+    </div>
+
+    <div class="teacher-card" onclick="openModal('modal6')">
+        <div class="teacher-icon" style="background-image: url('image/teacher6.jpg');"></div>
+        <p class="prof">教授</p>
+        <h3 class="teacher-name">舟橋 慶祐</h3>
+        <p class="specialty">研究テーマ:プロダクトデザインの広がり</p>
+    </div>
+
+    <div class="teacher-card" onclick="openModal('modal7')">
+        <div class="teacher-icon" style="background-image: url('image/teacher7.jpg');"></div>
+        <p class="prof">准教授</p>
+        <h3 class="teacher-name">押山 晶子</h3>
+        <p class="specialty">研究テーマ:脚本や映像の世界観を、どのような曲にし、どのような楽器を使い編曲すれば、より観客に伝わるか</p>
+    </div>
+
+    <div class="teacher-card" onclick="openModal('modal8')">
+        <div class="teacher-icon" style="background-image: url('image/teacher8.jpg');"></div>
+        <p class="prof">教授</p>
+        <h3 class="teacher-name">谷村 弘貴</h3>
+        <p class="specialty">研究テーマ:グラフィックデザイン、UI・UXデザイン</p>
+    </div>
+</div>
+
+            <div style="text-align: center;">
+                <a href="index.html" class="back-btn">トップページへ戻る</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 DAIDO UNIVERSITY</p>
+    </footer>
+     <script src="app2.js"></script>
+</body>
+</html>
