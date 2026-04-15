@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB課題 | 大同大学</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&family=Shippori+Mincho&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#" class="logo">
+                <span class="logo-orange">大同</span><span class="logo-blue">大学</span>
+            </a>
+            <ul>
+                <li><a href="#features">大学の特色</a></li>
+                <li><a href="#departments">学部紹介</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-slider">
+    <div class="slide active" style="background-image: url('image/main1.jpg');"></div>
+    <div class="slide" style="background-image: url('image/main2.jpg');"></div>
+    <div class="slide" style="background-image: url('image/main3.jpg');"></div>
+</div>
+
+<div class="dep-img" style="background-image: url('image/eng.jpg');"></div>
+<div class="dep-img" style="background-image: url('image/info.jpg');"></div>
+<div class="dep-img" style="background-image: url('image/des.jpg');"></div>
+            <div class="hero-content">
+                <p class="subtitle fade-in">Change yourself, change the future.</p>
+                <h1 class="fade-in">自分が変わる、<br>未来を変える。</h1>
+            </div>
+        </section>
+
+        <section id="features" class="services">
+            <div class="container">
+                <h2 class="section-title">Academic Features<br><span style="font-size: 1rem; color: var(--accent);">大学の特色</span></h2>
+                <div class="grid">
+                    <div class="card">
+                        <p class="card-number">01</p>
+                        <h3>Engineering & Design</h3>
+                        <p>工学とデザインを融合させ、次世代の「ものづくり」を担う創造力を養います。</p>
+                    </div>
+                    <div class="card">
+                        <p class="card-number">02</p>
+                        <h3>Practical Learning</h3>
+                        <p>最新の設備と、産業界との連携による実学教育で、社会で即戦力となる技術を磨きます。</p>
+                    </div>
+                    <div class="card">
+                        <p class="card-number">03</p>
+                        <h3>Career Path</h3>
+                        <p>学生一人ひとりの志望に寄り添った手厚い支援で、高い就職実績と未来を保証します。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="departments" class="departments fade-in">
+            <div class="container">
+                <h2 class="section-title">Departments<br><span style="font-size: 1rem; color: var(--accent);">学部紹介</span></h2>
+                <div class="dep-grid">
+                    <div class="dep-card">
+                        <div class="dep-img" style="background-image: url('image/ko.png');"></div>
+                        <h3>工学部</h3>
+                        <p>材料・機械・流体・熱の4力学をベースに、工業の王道である「機械」の基礎から応用までを学び、日本の産業界を支える人材を育成します。</p>
+                    </div>
+                    <div class="dep-card">
+                        <div class="dep-img" style="background-image: url('image/ke.png');"></div>
+                        <h3>建築学部</h3>
+                        <p>建築の先にある豊かな社会のあり方を見つめて、知性と感性が融合した建築力を、第一線で活躍する教員と共に学びます。</p>
+                    </div>
+                    <a href="teachers.html" class="dep-link">
+    <div class="dep-card">
+        <div class="dep-img" style="background-image: url('image/jo.png');"></div>
+        <h3>情報学部</h3>
+        <p>幅広い学びの中から自分の適性を発見できるカリキュラム。 プロ仕様の環境で専門分野の知識、スキル、感性を追求し、クリエイターをめざします。</p>
+    </div>
+</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact fade-in">
+            <div class="container">
+                <div class="contact-box">
+                    <h2 class="section-title">Contact<br><span style="font-size: 1rem; color: var(--accent);">お問い合わせ</span></h2>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label>お名前</label>
+                            <input type="text" placeholder="大同 太郎">
+                        </div>
+                        <div class="form-group">
+                            <label>メールアドレス</label>
+                            <input type="email" placeholder="example@daido-it.ac.jp">
+                        </div>
+                        <div class="form-group">
+                            <label>お問い合わせ内容</label>
+                            <textarea rows="5" placeholder="ご質問内容を入力してください"></textarea>
+                        </div>
+                        <button type="button" class="submit-btn">内容を確認する</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="access" class="access fade-in">
+            <div class="container">
+                <h2 class="section-title">Access<br><span style="font-size: 1rem; color: var(--accent);">アクセス</span></h2>
+                <div class="access-content">
+                    <div class="access-info">
+                        <div class="station-guide">
+                            <span class="train-icon">ADDRESS</span>
+                            <p class="address">〒457-8530<br>愛知県名古屋市南区滝春町10番地3</p>
+                        </div>
+                        <div class="station-guide">
+                            <span class="train-icon">Train</span>
+                            <p>名鉄常滑線「大同町」駅から徒歩5分</p>
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6530.192509899423!2d136.90318807543056!3d35.07932766280393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60037be3c626b699%3A0xb40726a5fb4c7d9f!2z5aSn5ZCM5aSn5a2m!5e0!3m2!1sja!2sjp!4v1766454234022!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 DAIDO UNIVERSITY</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
